@@ -1,10 +1,11 @@
-import {Card} from "../Card/Card";
 import {UsersList} from "../UsersList/UsersList";
 
-export const Main = () => {
+export const Main = ({users}) => {
 	return (
 		<>
-			<UsersList/>
+			<UsersList
+			users={users}
+			/>
 		</>
 	)
 }

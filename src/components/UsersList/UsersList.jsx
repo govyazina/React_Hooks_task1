@@ -1,13 +1,7 @@
-import {useEffect, useState} from "react";
 import {Card} from "../Card/Card";
 
-export const UsersList = () => {
-    const [users, setUsers] = useState([])
-    useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/users')
-            .then(data => data.json())
-            .then(result => setUsers(result))
-    }, [])
+export const UsersList = ({users}) => {
+
     return (
         <>
             <div className='conteiner'>
