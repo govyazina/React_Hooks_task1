@@ -7,7 +7,7 @@ export const UsersList = ({users}) => {
             <div className='conteiner'>
                 <ul className="collection row">
                     {users.map((user) => (
-                        <li key={user.id} className="collection-item avatar col s6">
+                        <li key={user.id} className="collection-item avatar col s4">
 
                             <Card
                                 name={user.name}
